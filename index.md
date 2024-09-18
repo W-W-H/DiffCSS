@@ -27,14 +27,14 @@ B: i'm quite talented.
 B: my literature professor at university used to encourage me.  
 A: this is not a school, mrs lee!  
 A: i got in touch with you to speak to you about our marketing office!  
-<audio controls="controls" src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-0-43-A-0-context.wav" type="audio/wav"></audio>
+<audio controls="controls" src="/data/context/9_1_d2418.wav" type="audio/wav"></audio>
 
 #### Current utterance
 A: that's what i'd like to hire you for!
 
 #### Synthesized speech
 
-| Vanilla FastSpeech 2 | With GRU-based <br> context modeling | With DialogueGCN-based <br> context modeling | (Proposed) With MSRGCN-based <br> context modeling |
+| GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
 | "that's what i'd like to hire you for." | "that's what i'd like to hire you for." | "that's what i'd like to hire you **for**." | "that's what i'd like to **hire** you for." |
 | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-0-43-A-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-0-43-A-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-0-43-A-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-0-43-A-4-proposed.wav" type="audio/wav"></audio> |
@@ -54,7 +54,7 @@ I: i repair the machines.
 
 #### Synthesized speech
 
-| Vanilla FastSpeech 2 | With GRU-based <br> context modeling | With DialogueGCN-based <br> context modeling | (Proposed) With MSRGCN-based <br> context modeling |
+| GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
 | "i repair the machines." | "i repair the machines." | "i repair the machines." | "i **repair** the machines." |
 | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-5-28-I-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-5-28-I-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-5-28-I-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-5-28-I-4-proposed.wav" type="audio/wav"></audio> |
@@ -74,7 +74,7 @@ B: what do you do?
 
 #### Synthesized speech
 
-| Vanilla FastSpeech 2 | With GRU-based <br> context modeling | With DialogueGCN-based <br> context modeling | (Proposed) With MSRGCN-based <br> context modeling |
+| GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
 | "what do you do?" | "what do you do?" | "what do you do?" | "what do you **do**?" |
 | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-0-19-B-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-0-19-B-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-0-19-B-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-0-19-B-4-proposed.wav" type="audio/wav"></audio> |
@@ -94,7 +94,7 @@ C: i want to have lots of fun!
 
 #### Synthesized speech
 
-| Vanilla FastSpeech 2 | With GRU-based <br> context modeling | With DialogueGCN-based <br> context modeling | (Proposed) With MSRGCN-based <br> context modeling |
+| GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
 | "i want to have lots of fun!" | "i want to have lots of fun!" | "i want to have lots of fun!" | "i want to have lots of **fun**!" |
 | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-26-C-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-26-C-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-26-C-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-26-C-4-proposed.wav" type="audio/wav"></audio> |
@@ -114,7 +114,7 @@ B: i'm speaking with fast shippers, aren't I?
 
 #### Synthesized speech
 
-| Vanilla FastSpeech 2 | With GRU-based <br> context modeling | With DialogueGCN-based <br> context modeling | (Proposed) With MSRGCN-based <br> context modeling |
+| GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
 | "i'm speaking with fast **shippers**, aren't I" | "i'm speaking with fast shippers, aren't I" | "i'm speaking with **fast** shippers, aren't I" | "i'm speaking with **fast shippers**, **aren't** I" |
 | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-3-63-B-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-3-63-B-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-3-63-B-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-3-63-B-4-proposed.wav" type="audio/wav"></audio> |
@@ -134,7 +134,7 @@ B: it's just like when we were at university.
 
 #### Synthesized speech
 
-| Vanilla FastSpeech 2 | With GRU-based <br> context modeling | With DialogueGCN-based <br> context modeling | (Proposed) With MSRGCN-based <br> context modeling |
+| GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
 | "it's just like when we were at university." | "it's just like when we were at university." | "it's **just** like when we were at university." | "it's just like **when we were** at **university**." |
 | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-14-B-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-14-B-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-14-B-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-14-B-4-proposed.wav" type="audio/wav"></audio> |
