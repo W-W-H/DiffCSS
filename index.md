@@ -36,7 +36,7 @@ W: Turn on the radio? What for?
 
 | GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
-| "Turn on the radio? What for?" | "Turn on the radio? What for?" | "Turn on the radio? What for?" | "tTurn on the radio? What for?" |
+| "Turn on the radio? What for?" | "Turn on the radio? What for?" | "Turn on the radio? What for?" | "Turn on the radio? What for?" |
 | <audio controls><source src="./data/gru/5_1_d2536.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/5_1_d2536.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/5_1_d2536.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diffcss/5_1_d2536.wav" type="audio/wav"></audio> |
 
 ### Sample 2
@@ -61,9 +61,12 @@ M: Oh, did you get a job?
 
 ### Sample 3
 #### Context
-W: That sounds good. Let me see one.  
+W: That sounds good. Let me see one.
+
 M: Here's the latest model — Digital Barbie.
+
 W: Oh, she's nice. How much is she?
+
 M: Why, she's only twenty nine ninety five dollars.
 
 <audio controls="controls" src="./data/context/6_1_d2444.wav" type="audio/wav"></audio>
