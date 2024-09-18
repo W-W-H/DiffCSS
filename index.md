@@ -22,119 +22,98 @@ Conversational speech synthesis (CSS) aims to synthesize both contextually appro
 ## Synthesized samples
 ### Sample 1
 #### Context
-B: as an author!  
-B: i'm quite talented.  
-B: my literature professor at university used to encourage me.  
-A: this is not a school, mrs lee!  
-A: i got in touch with you to speak to you about our marketing office!  
-<audio controls="controls" src="./data/context/9_1_d2418.wav" type="audio/wav"></audio>
+W: Umm I don’t want to. 
+M: Well, come and talk to me then.
+W: Certainly not. 
+M: May I turn on the radio then?
+
+<audio controls="controls" src="./data/context/5_1_d2536.wav" type="audio/wav"></audio>
 
 #### Current utterance
-A: that's what i'd like to hire you for!
+W: Turn on the radio? What for?
 
 #### Synthesized speech
 
 | GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
-| "that's what i'd like to hire you for." | "that's what i'd like to hire you for." | "that's what i'd like to hire you **for**." | "that's what i'd like to **hire** you for." |
-| <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-0-43-A-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-0-43-A-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-0-43-A-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-0-43-A-4-proposed.wav" type="audio/wav"></audio> |
+| "Turn on the radio? What for?" | "Turn on the radio? What for?" | "Turn on the radio? What for?" | "tTurn on the radio? What for?" |
+| <audio controls><source src="./data/gru/5_1_d2536.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/5_1_d2536.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/5_1_d2536.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diffcss/5_1_d2536.wav" type="audio/wav"></audio> |
 
 ### Sample 2
 #### Context
-E: linda is a vegetarian, aren't you, linda?  
-B: yes, yes, i am.  
-E: so is it possible to have some wheat free snacks and some that are suitable for vegans as well?  
-I: well, i'm not sure.  
-I: i'm just a technician.  
+M: Umm, where did you go yesterday?
+W: I went to Croydon.
+M: Did you go shopping?
+W: No, I went for an interview.
 
-<audio controls="controls" src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-5-28-I-0-context.wav" type="audio/wav"></audio>
+<audio controls="controls" src="./data/context/4_0_d2522.wav" type="audio/wav"></audio>
+
 
 #### Current utterance
-I: i repair the machines.  
+M: Oh, did you get a job?  
 
 #### Synthesized speech
 
 | GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
-| "i repair the machines." | "i repair the machines." | "i repair the machines." | "i **repair** the machines." |
-| <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-5-28-I-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-5-28-I-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-5-28-I-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-5-28-I-4-proposed.wav" type="audio/wav"></audio> |
+| "Oh, did you get a job?" | "Oh, did you get a job? " | "Oh, did you get a job? " | "Oh, did you get a job? " |
+| <audio controls><source src="./data/gru/4_0_d2522.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/4_0_d2522.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/4_0_d2522.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diffcss/4_0_d2522.wav" type="audio/wav"></audio> |
 
 ### Sample 3
 #### Context
-B: and the office is very comfortable.  
-A: do you have any promotion prospects?  
-B: no, i don't think so.  
-A: do you attend training courses?  
-B: yes, sometimes.  
+W: That sounds good. Let me see one.  
+M: Here's the latest model — Digital Barbie.
+W: Oh, she's nice. How much is she?
+M: Why, she's only twenty nine ninety five dollars.
 
-<audio controls="controls" src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-0-19-B-0-context.wav" type="audio/wav"></audio>
+<audio controls="controls" src="./data/context/6_1_d2444.wav" type="audio/wav"></audio>
 
 #### Current utterance
-B: what do you do?
+W: Well, that's reasonable. I'll take it.
 
 #### Synthesized speech
 
 | GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
-| "what do you do?" | "what do you do?" | "what do you do?" | "what do you **do**?" |
-| <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-0-19-B-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-0-19-B-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-0-19-B-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/80-0-19-B-4-proposed.wav" type="audio/wav"></audio> |
+| "Well, that's reasonable. I'll take it." | "Well, that's reasonable. I'll take it." | "Well, that's reasonable. I'll take it." | "Well, that's reasonable. I'll take it." |
+| <audio controls><source src="./data/gru/6_1_d2444.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/6_1_d2444.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/6_1_d2444.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diffcss/6_1_d2444.wav" type="audio/wav"></audio> |
 
 ### Sample 4
 #### Context
-A: hi michelle, sandra!  
-C: how are you?  
-C: wonderful!  
-C: all together again, just like the old days!  
-C: ok guys, what shall we do?  
+W: No, that won’t do. I’ll take this smoked ham you have here. 
+M: OK, umm is there anything else?
+W: Is this salami and bologna you have here?
+M: Yes! It’s very fine meat! Made it myself...
 
-<audio controls="controls" src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-26-C-0-context.wav" type="audio/wav"></audio>
+<audio controls="controls" src="./data/context/9_1_d2418.wav" type="audio/wav"></audio>
+
 
 #### Current utterance
-C: i want to have lots of fun!
+W: Sounds good. OK, that’s it.
 
 #### Synthesized speech
 
 | GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
-| "i want to have lots of fun!" | "i want to have lots of fun!" | "i want to have lots of fun!" | "i want to have lots of **fun**!" |
-| <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-26-C-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-26-C-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-26-C-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-26-C-4-proposed.wav" type="audio/wav"></audio> |
+| "Sounds good. OK, that’s it." | "Sounds good. OK, that’s it." | "Sounds good. OK, that’s it." | "Sounds good. OK, that’s it." |
+| <audio controls><source src="./data/gru/9_1_d2418.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/9_1_d2418.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/9_1_d2418.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diffcss/9_1_d2418.wav" type="audio/wav"></audio> |
 
 ### Sample 5
 #### Context
-B: merchandise was destined for china!  
-E: china?  
-E: excuse me, um are you the owner of the blue moon in orange massachusetts?  
-B: no i'm not!  
-B: i work for spectre, we're a multinational sporting goods manufacturer.  
+W: Hey, look out!
+M: What happened?
+W: You've just scratched my car. Oh, God, a paint was scratched off.
+M: Where? my car?
 
-<audio controls="controls" src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-3-63-B-0-context.wav" type="audio/wav"></audio>
+<audio controls="controls" src="./data/context/4_1_d2517.wav" type="audio/wav"></audio>
+
 
 #### Current utterance
-B: i'm speaking with fast shippers, aren't I?
+W: No, mine!
 
 #### Synthesized speech
 
 | GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
-| "i'm speaking with fast **shippers**, aren't I" | "i'm speaking with fast shippers, aren't I" | "i'm speaking with **fast** shippers, aren't I" | "i'm speaking with **fast shippers**, **aren't** I" |
-| <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-3-63-B-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-3-63-B-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-3-63-B-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/78-3-63-B-4-proposed.wav" type="audio/wav"></audio> |
-
-### Sample 6
-#### Context
-A: the others will be here in a minute.  
-A: let's get started straight away.  
-A: right.  
-A: before you know it we'll have cleaned and tidied everything!  
-B: you haven't changed anne, cleaning, dusting, and tidying!  
-
-<audio controls="controls" src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-14-B-0-context.wav" type="audio/wav"></audio>
-
-#### Current utterance
-B: it's just like when we were at university.
-
-#### Synthesized speech
-
-| GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
-| :--: | :--: | :--: | :--: |
-| "it's just like when we were at university." | "it's just like when we were at university." | "it's **just** like when we were at university." | "it's just like **when we were** at **university**." |
-| <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-14-B-1-vanilla.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-14-B-2-gru.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-14-B-3-dialoguegcn.wav" type="audio/wav"></audio> | <audio controls><source src="https://thuhcsi.github.io/mm2022-conversational-tts/static/76-0-14-B-4-proposed.wav" type="audio/wav"></audio> |
+| "No, mine!" | "No, mine!" | "No, mine!" | "No, mine!" |
+| <audio controls><source src="./data/gru/4_1_d2517.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/4_1_d2517.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/4_1_d2517.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diffcss/4_1_d2517.wav" type="audio/wav"></audio> |
