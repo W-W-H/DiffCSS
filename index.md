@@ -27,7 +27,7 @@ B: i'm quite talented.
 B: my literature professor at university used to encourage me.  
 A: this is not a school, mrs lee!  
 A: i got in touch with you to speak to you about our marketing office!  
-<audio controls="controls" src="/data/context/9_1_d2418.wav" type="audio/wav"></audio>
+<audio controls="controls" src="./data/context/9_1_d2418.wav" type="audio/wav"></audio>
 
 #### Current utterance
 A: that's what i'd like to hire you for!
