@@ -20,5 +20,5 @@ def resample_wav_files(directory, target_sr=24000):
                     print(f"Resampled file saved: {file_path}")
 
 # 使用函数，替换为你的目标目录路径
-directory_path = "./data"
+directory_path = "./data/diversity"
 resample_wav_files(directory_path)
