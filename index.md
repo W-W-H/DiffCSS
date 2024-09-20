@@ -81,7 +81,7 @@ M: Wow. He's heavy! And his skin feels really cool.
 
 | GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
 | :--: | :--: | :--: | :--: |
-| "Well, that's reasonable. I'll take it." | "Well, that's reasonable. I'll take it." | "Well, that's reasonable. I'll take it." | "Well, that's reasonable. I'll take it." |
+| "Wow. He's heavy! And his skin feels really cool." | "Wow. He's heavy! And his skin feels really cool." | "Wow. He's heavy! And his skin feels really cool." | "Wow. He's heavy! And his skin feels really cool." |
 | <audio controls><source src="./data/gru/6_0_d2409.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/6_0_d2409.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/6_0_d2409.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diffcss/6_0_d2409.wav" type="audio/wav"></audio> |
 
 ### Sample 4
