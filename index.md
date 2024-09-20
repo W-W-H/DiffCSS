@@ -174,6 +174,62 @@ W: Yes, of course. Thank you very much.
 
 |Transcript| Run 1 | Run 2 | Run 3 |
 | :--: | :--: | :--: | :--: |
-|'Yes, of course. Thank you very much. '| <audio controls><source src="./data/diversity/7_1_d2460_1.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/7_1_d2460_2.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/7_1_d2460_3.wav" type="audio/wav"></audio> |
+|'Yes, of course. Thank you very much.'| <audio controls><source src="./data/diversity/7_1_d2460_1.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diversity/7_1_d2460_2.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diversity/7_1_d2460_3.wav" type="audio/wav"></audio> |
 
+### Sample 2
+#### Context
+W: What's good today?
+
+M: Umm the salmon is good toady, it's very fresh.
+
+W: How is it done?
+
+M: It's cooked with lemon and savored with rice.
+
+<audio controls="controls" src="./data/context/4_1_d2419.wav" type="audio/wav"></audio>
+
+#### Current utterance
+W: Sounds nice, I will try it.
+
+|Transcript| Run 1 | Run 2 | Run 3 |
+| :--: | :--: | :--: | :--: |
+|'Sounds nice, I will try it.'| <audio controls><source src="./data/diversity/4_1_d2419_1.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diversity/4_1_d2419_2.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diversity/4_1_d2419_3.wav" type="audio/wav"></audio> |
+
+### Sample 3
+#### Context
+M: Hi Melissa, are you going home this weekend?
+
+W: No, not this weekend. I have too much work to do.
+
+M: Where do your parents live?
+
+W: My father lives in Washington DC.
+
+<audio controls="controls" src="./data/context/4_0_d2402.wav" type="audio/wav"></audio>
+
+#### Current utterance
+W: How about your mother?
+
+|Transcript| Run 1 | Run 2 | Run 3 |
+| :--: | :--: | :--: | :--: |
+|'How about your mother?'| <audio controls><source src="./data/diversity/4_0_d2402_1.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diversity/4_0_d2402_2.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diversity/4_0_d2402_3.wav" type="audio/wav"></audio> |
+
+### Sample 4
+#### Context
+W: With pleasure. What color do you like?
+
+M: I like yellow best. How much does it cost?
+
+W: It costs two-seventy-five yuan, Mr.
+
+M: It's nice, but that's very steep for a rain coat. Could you give me a twenty percent discount?
+
+<audio controls="controls" src="./data/context/5_1_d2403.wav" type="audio/wav"></audio>
+
+#### Current utterance
+W: Sorry, we don't give discounts.
+
+|Transcript| Run 1 | Run 2 | Run 3 |
+| :--: | :--: | :--: | :--: |
+|'Sorry, we don't give discounts.'| <audio controls><source src="./data/diversity/5_1_d2403_1.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diversity/5_1_d2403_2.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diversity/5_1_d2403_3.wav" type="audio/wav"></audio> |
 
