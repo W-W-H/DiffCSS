@@ -153,14 +153,27 @@ W: No, mine!
 | <audio controls><source src="./data/gru/4_1_d2517.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/4_1_d2517.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/4_1_d2517.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diffcss/4_1_d2517.wav" type="audio/wav"></audio> |
 
 
-### Diversity
+## Diversity
 
 We demonstrate the diversity of the proposed method by sampling prosody embeddings multiple times from the same conversational context. As shown in the table below, the predicted prosody varies across different runs, resulting in diverse synthesized speech. At the same time, the predicted prosody remains consistent with the dialog context while maintaining strong expressiveness.
 
-| GRU-based context modeling | DialogueGCN-based context modeling | Transformer encoder-based context modeling | Proposed |
-| :--: | :--: | :--: | :--: |
-| "No, mine!" | "No, mine!" | "No, mine!" | "No, mine!" |
-| <audio controls><source src="./data/gru/4_1_d2517.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/4_1_d2517.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/4_1_d2517.wav" type="audio/wav"></audio> | <audio controls><source src="./data/diffcss/4_1_d2517.wav" type="audio/wav"></audio> |
+### Sample 1
+#### Context
+W: Any day except Tuesday.
 
+M: How about Thursday?
+
+W: Yes, Thursday would be fine. What time shall I come?.
+
+M: Oh, about six. Will that be OK?
+
+<audio controls="controls" src="./data/context/7_1_d2460.wav" type="audio/wav"></audio>
+
+#### Current utterance
+W: Yes, of course. Thank you very much. 
+
+|Transcript| Run 1 | Run 2 | Run 3 |
+| :--: | :--: | :--: | :--: |
+|'Yes, of course. Thank you very much. '| <audio controls><source src="./data/diversity/7_1_d2460_1.wav" type="audio/wav"></audio> | <audio controls><source src="./data/dialoguegcn/7_1_d2460_2.wav" type="audio/wav"></audio> | <audio controls><source src="./data/encoder/7_1_d2460_3.wav" type="audio/wav"></audio> |
 
 
